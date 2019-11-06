@@ -63,7 +63,7 @@
             <tooltip slot="append-outer" :options="options" :html-description="htmlDescription" />
           </v-text-field>
         </template>
-        <v-time-picker v-model="modelWrapper[modelKey]">
+        <v-time-picker v-model="modelWrapper[modelKey]" formar="24h" use-seconds>
           <v-spacer />
           <v-btn text class="v-btn--flat" :style="oldFlat" @click="menu = false">
             Cancel
